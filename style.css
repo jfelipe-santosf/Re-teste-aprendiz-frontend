@@ -68,6 +68,9 @@ footer{
     cursor: pointer;
     height: 48px;
 }
+.text-hidde{
+    display: none;
+}
 .conteiner-capa{
     text-align: center;    
 }
@@ -137,15 +140,15 @@ footer{
         display: flex;
         align-items: center;
     }
-    .details-text{
+    .details-text{ /* caixa de texto dos detalhes do filme a esquerda*/
         margin-left: 40px;
     }
-    .conteiner-details-text{
+    .conteiner-details-text{ /* caixa de texto dos detalhes do filme a direita*/
         margin-left: auto;
         margin-right: 250px;
     }
     .conteiner-resenha{
-        width: 714px;
+        max-width: 714px;
         margin: auto;
         margin-top: 10px;
     }
@@ -160,5 +163,69 @@ footer{
     }
     .txt-footer{
         margin-top: 10px;
+    }
+}
+@media (min-width: 1100px){ /* para pc */
+    .conteiner-details-text{ /* caixa de texto dos detalhes do filme a direita*/
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+    .details-text{ /* caixa de texto dos detalhes do filme a esquerda*/
+        margin-left: 10px;
+    }
+    .capa{
+        top: 90px;
+        left: 0px;
+        width: 346px;
+        height: 519px
+    }
+    .conteiner-capa{
+        text-align: left;    
+    }
+    .conteiner-resenha{
+        max-width: 500px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    #conteiner-resenha-direita{
+        margin-left: auto;
+        margin-right: 30px;
+    }
+    .resenha-conteiner{
+        display: flex;
+    }
+    .icon{
+        display: none;
+    }
+    .text-hidde{
+        display: inline;
+        color: #F2EAD3;
+        margin-top: 15px;
+        margin-right: 250px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "League Spartan", sans-serif;
+    }
+    .conteiner-body{
+        max-width: 1200px;
+        display: flex;
+        padding: 30px;
+        margin: auto;
+        margin-top: 60px;
+    }
+    .body-footer{
+        display: flex;
+    }
+    #logo-footer{
+        margin-left: auto;
+        display: flex;
+        width: auto;
+    }
+    .footer{
+        display: flex;
+        width: 800px;
+        margin: auto;
+        flex-wrap: wrap;
     }
 }
