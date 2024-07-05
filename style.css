@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+/* componentes */
 body {
     background: #F2EAD3;
     margin: 0px;
@@ -40,38 +41,6 @@ c{
     margin-left: 30px;
     cursor: pointer;
 }
-.logo{
-    margin-left: 15px;
-    width: 128px;
-    height: 40px;
-    opacity: 1;
-    cursor: pointer;
-}
-#icon {
-    color: #F2EAD3;
-    margin-right: 15px;
-    cursor: pointer;
-    height: 48px;
-}
-#conteiner-capa{
-    text-align: center;    
-}
-#capa{
-    top: 90px;
-    left: 15px;
-    width: 346px;
-    height: 519px
-}
-#capa-text{
-    font-family: "League Spartan", sans-serif;
-    font-weight: normal;
-    color: #A4907C;
-}
-#conteiner-scroll{
-    background-color: #DFD7BF;
-    height: 350px;
-    padding-top: 1px
-}
 footer{
     box-sizing: border-box;
     width: 100%;
@@ -79,7 +48,46 @@ footer{
     padding: 10px;
     margin-top: 70px;
 }
-.txt-footer{
+/* classes reutilizáveis */
+.logo{
+    margin-left: 15px;
+    width: 128px;
+    height: 40px;
+    opacity: 1;
+    cursor: pointer;
+}
+.conteiner{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-family: "League Spartan", sans-serif;
+}
+/* classes do site */
+.icon { /* icone MENU */
+    color: #F2EAD3;
+    margin-right: 15px;
+    cursor: pointer;
+    height: 48px;
+}
+.conteiner-capa{
+    text-align: center;    
+}
+.capa{
+    top: 90px;
+    left: 15px;
+    width: 346px;
+    height: 519px
+}
+.capa-text{
+    font-family: "League Spartan", sans-serif;
+    font-weight: normal;
+    color: #A4907C;
+}
+.conteiner-scroll{ /* conteiner dos artistas */
+    background-color: #DFD7BF;
+    height: 350px;
+    padding-top: 1px
+}
+.txt-footer{ /* texto usado no rodapé */
     margin: 15px;
     margin-top: 25px;
     color: #F2EAD3;
@@ -91,19 +99,13 @@ footer{
 .owl-carousel owl-theme{
     width: 190px;
 }
-.conteiner{
-    margin-top: 30px;
-    margin-left: 15px;
-    font-family: "League Spartan", sans-serif;
-}
-
 .item{
     width: 190px;
     margin: 0 auto;
     text-align: center;
     font-family: "League Spartan", sans-serif;
 }
-.item-img{
+.item-img{ /* imagem dos atores / atrizes */
     margin-right: 0px;
     margin-top: 0px;
     width: 190px;
@@ -118,18 +120,45 @@ footer{
     margin: 10px;
     border-radius: 10px;
 }
-.conteiner-resenha-text{
+.conteiner-resenha-text{ /*texto principal das resenhas */
     font-size: 18px;
     margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
 }
-.conteiner-resenha-foot{
+.conteiner-resenha-foot{ /* Parte inferior das resenhas */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media (min-width: 744px) {
-    
+@media (min-width: 744px) { /* para tablets */
+    #conteiner-datails{
+        display: flex;
+        align-items: center;
+    }
+    .details-text{
+        margin-left: 40px;
+    }
+    .conteiner-details-text{
+        margin-left: auto;
+        margin-right: 250px;
+    }
+    .conteiner-resenha{
+        width: 714px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .titulo-scroll{
+        margin-left: 70px;   
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    .txt-footer{
+        margin-top: 10px;
+    }
 }

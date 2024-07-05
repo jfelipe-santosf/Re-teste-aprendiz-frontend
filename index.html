@@ -14,11 +14,11 @@
 <body>
     <header>
         <img class="logo" src="./imgs/logo.png">
-        <img id="icon" src="./imgs/menu.png">
+        <img class="icon" src="./imgs/menu.png">
     </header>
-    <div id="conteiner-capa">
-        <img id="capa" src="./imgs/capa.png">
-        <h1 id="capa-text"><b>Barbie</b> (2023)</h1>
+    <div class="conteiner-capa">
+        <img class="capa" src="./imgs/capa.png">
+        <h1 class="capa-text"><b>Barbie</b> (2023)</h1>
     </div>
     <div class="conteiner">
         <h2>Gênero:</h2>
@@ -31,20 +31,24 @@
         </p>
     </div>
     <div id="conteiner-datails" class="conteiner">
-        <h2>Dirigido por:</h2>
-        <p>Greta Gerwig</p>
-        <h2>Escrito por:</h2>
-        <p>Greta Gerwig, Noah Baumbach</p>
-        <h2>Situação:</h2>
-        <p>Lançado</p>
-        <h2>Idioma original:</h2>
-        <p>Inglês</p>
-        <h2>Orçamento:</h2>
-        <p>$145,000,000.00</p>
-        <h2>Receita:</h2>
-        <p>$1,280,313,193.00</p>
+        <div class="details-text">
+            <h2>Dirigido por:</h2>
+            <p>Greta Gerwig</p>
+            <h2>Escrito por:</h2>
+            <p>Greta Gerwig, Noah Baumbach</p>
+            <h2>Situação:</h2>
+            <p>Lançado</p>
+        </div>
+        <div class="conteiner-details-text">
+            <h2>Idioma original:</h2>
+            <p>Inglês</p>
+            <h2>Orçamento:</h2>
+            <p>$145,000,000.00</p>
+            <h2>Receita:</h2>
+            <p>$1,280,313,193.00</p>
+        </div>
     </div>
-    <div id="conteiner-scroll">
+    <div class="conteiner-scroll">
         <div class="conteiner"><h1>Elenco<c id="titulo-scroll">Ver mais</c></h1></div>
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -95,8 +99,8 @@
         </div>
     </div>
 
-    <div>
-        <div class="conteiner"><h1>Resenhas<c id="titulo-scroll">Ver mais</c></h1></div>
+    <div>>
+        <div class="titulo-scroll conteiner"><h1>Resenhas<c>Ver mais</c></h1></div>
 
         <div class="conteiner-resenha">
             <p class="conteiner-resenha-text">
@@ -124,15 +128,17 @@
 
     <footer>
         <img class="logo" src="./imgs/logo.png">
-        <p class="txt-footer">Sobre</p>
-        <p class="txt-footer">Contato</p>
-        <p class="txt-footer">Suporte</p>
-        <p class="txt-footer">Adicione um filme</p>
-        <p class="txt-footer">Adicione uma Série</p>
-        <p class="txt-footer">Discussões</p>
-        <p class="txt-footer">Termo de Uso</p>
-        <p class="txt-footer">Política de Privacidade</p>
-        <p class="txt-footer">Diretrizes</p>
+        <div class="footer">
+            <p class="txt-footer">Sobre</p>
+            <p class="txt-footer">Contato</p>
+            <p class="txt-footer">Suporte</p>
+            <p class="txt-footer">Adicione um filme</p>
+            <p class="txt-footer">Adicione uma Série</p>
+            <p class="txt-footer">Discussões</p>
+            <p class="txt-footer">Termo de Uso</p>
+            <p class="txt-footer">Política de Privacidade</p>
+            <p class="txt-footer">Diretrizes</p>
+        </div>
     </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
